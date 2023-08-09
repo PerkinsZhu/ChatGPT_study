@@ -6,7 +6,7 @@ from langchain import OpenAI, Wikipedia
 from langchain.agents import initialize_agent, Tool
 from langchain.agents import AgentType
 from langchain.agents.react.base import DocstoreExplorer
-from com.perkins.base.init import  init
+from com.perkins.base.init import init
 init()
 
 docstore = DocstoreExplorer(Wikipedia())

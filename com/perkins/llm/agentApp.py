@@ -11,7 +11,7 @@ from com.perkins.base.init import init
 init();
 
 
-llm = OpenAI(temperature=0)
+llm = OpenAI(temperature=0,model_name='gpt-3.5-turbo-16k-0613')
 tools = load_tools(["serpapi", "llm-math"], llm=llm)
 agent = initialize_agent(tools, llm, agent=AgentType.ZERO_SHOT_REACT_DESCRIPTION, verbose=True)
 

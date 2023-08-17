@@ -28,7 +28,7 @@ from langchain.llms import OpenAI
 from com.perkins.base.init import init
 init()
 
-llm = Wenxin(model="ernie-bot-turbo",temperature=0)
+llm = Wenxin(model="ernie-bot-turbo",temperature=0.1)
 # print(llm("今天是什么时候？上海浦东天气怎么样？"))
 tools = load_tools(["serpapi", "llm-math"], llm=llm)
 
@@ -36,7 +36,7 @@ tools = load_tools(["serpapi", "llm-math"], llm=llm)
 agent = initialize_agent(tools, llm, agent=AgentType.CHAT_ZERO_SHOT_REACT_DESCRIPTION, verbose=True)
 
 # Now let's test it out!
-agent.run("Who is Olivia Wilde's boyfriend? What is his current age raised to the 0.23 power?")
+print(agent.run("Who is Olivia Wilde's boyfriend? What is his current age raised to the 0.23 power?"))
 
 # prompt = PromptTemplate(
 #     input_variables=["product"],

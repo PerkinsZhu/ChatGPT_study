@@ -19,7 +19,7 @@ class CommaSeparatedListOutputParser(BaseOutputParser):
 
     def parse(self, text: str):
         """Parse the output of an LLM call."""
-        return text.strip().split(", ")
+        return text.strip().split("，")
 
 
 template = """你现在是我的一个助手，我会指定一个类别，你帮我生成该类别下的五个对象，用逗号分隔。注意，不用输出任何提示词，只需要用逗号把五项分隔开即可。"""

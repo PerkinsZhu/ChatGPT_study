@@ -4,9 +4,9 @@ import os
 def init():
     print("设置环境变量")
 
-    # os.environ["OPENAI_API_KEY"] = "sk-kcfJcDXKztSEuMxaSqVjvuniMFIlz8HSr2xApuxivkNINiEc"
-    # os.environ["OPENAI_API_BASE"] = "https://key.langchain.com.cn/v1"
-    # os.environ["OPENAI_API_PREFIX"] = "https://key.langchain.com.cn"
+    os.environ["OPENAI_API_KEY"] = "sk-kcfJcDXKztSEuMxaSqVjvuniMFIlz8HSr2xApuxivkNINiEc"
+    os.environ["OPENAI_API_BASE"] = "https://key.langchain.com.cn/v1"
+    os.environ["OPENAI_API_PREFIX"] = "https://key.langchain.com.cn"
 
     os.environ["OPENAI_API_KEY"] = "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"
     os.environ["OPENAI_API_BASE"] = "http://proxy-chatgpt-jieylpuhdf.us-west-1.fcapp.run/v1"

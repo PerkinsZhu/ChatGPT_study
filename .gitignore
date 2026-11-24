@@ -3,3 +3,5 @@ my_feature_repo
 
 base/*
 /com/perkins/base/*
+env
+/.env
